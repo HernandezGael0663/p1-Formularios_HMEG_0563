@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Checkbox</title>
+</head>
+<body>
+    <!-- Encabezado principal del formulario -->
+    <h2>Formularios con checkbox</h2>
+
+    <!-- action="": Define a qué página se envían los datos -->
+    <!-- method="post": Envía los datos del formulario de forma oculta para mayor seguridad -->
+    <form action="" method="post">
+        Ingresa tu nombre:
+        <!-- Campo de texto normal para ingresar el nombre de usuario -->
+        <input type="text" name="nombre">
+        <br><br>
+
+        Selecciona los lenguajes que conozcas:
+        <br>
+        <!-- type="checkbox": Casilla de selección múltiple (el usuario puede marcar varias opciones a la vez) -->
+        <input type="checkbox" name="Java"> Java <br>
+        <input type="checkbox" name="Python"> Python <br>
+        <input type="checkbox" name="C#"> C# <br>
+        <input type="checkbox" name="Flutter"> Flutter <br>
+        <br>
+
+        <!-- Botón para enviar la información seleccionada al servidor -->
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>

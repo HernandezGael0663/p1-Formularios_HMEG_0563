@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Botones e Íconos</title>
+    <!-- Librería Font Awesome: Carga la colección de íconos para poder usarlos en la página -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Encabezado principal del formulario -->
+    <h2>Formulario con botones</h2>
+
+    <!-- action="": Define a qué página se envían los datos -->
+    <!-- method="post": Envía los datos del formulario de forma oculta para mayor seguridad -->
+    <form action="" method="post">
+        Ingresa tu nombre:
+        <!-- Campo de texto normal para ingresar el nombre de usuario -->
+        <input type="text" name="nombre">
+        <br><br>
+
+        <!-- <button>: Crea un botón que permite incluir texto, imágenes o íconos.
+             - type="submit": Envía la información del formulario al servidor.
+             - <i>: Muestra el ícono de avión de papel usando las clases de Font Awesome. -->
+        <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i></button>
+
+        <!-- type="reset": Restablece todos los campos del formulario a su valor inicial.
+             - <i>: Muestra el ícono del bote de basura. -->
+        <button type="reset">Borrar <i class="fa-solid fa-trash"></i></button>
+    </form>
+</body>
+</html>

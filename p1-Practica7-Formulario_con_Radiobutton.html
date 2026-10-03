@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Radiobutton</title>
+</head>
+<body>
+    <!-- Encabezado principal del formulario -->
+    <h2>Formularios con Radiobotón</h2>
+
+    <!-- action="": Define a qué página se envían los datos -->
+    <!-- method="post": Envía los datos del formulario de forma oculta para mayor seguridad -->
+    <form action="" method="post">
+        Ingresa tu nombre:
+        <!-- Campo de texto normal para ingresar el nombre de usuario -->
+        <input type="text" name="nombre">
+        <br><br>
+
+        Selecciona el máximo de estudios que tienes:
+        <br>
+        <!-- type="radio": Botón de selección única (solo se puede elegir UNA opción del grupo).
+             - name="estudios": Todos comparten el mismo nombre para agruparlos (así el navegador sabe que son del mismo grupo).
+             - value="1": El valor numérico o texto que se enviará al servidor cuando esta opción esté seleccionada. -->
+        <input type="radio" name="estudios" value="1"> Sin estudios <br>
+        <input type="radio" name="estudios" value="2"> Primaria <br>
+        <input type="radio" name="estudios" value="3"> Secundaria <br>
+        <input type="radio" name="estudios" value="4"> Preparatoria <br>
+        <br>
+
+        <!-- Botón para enviar la opción seleccionada al servidor -->
+        <input type="submit" value="enviar">
+
+        <!-- Botón para desmarcar la selección y limpiar el campo de texto -->
+        <input type="reset" value="borrar">
+    </form>
+</body>
+</html>

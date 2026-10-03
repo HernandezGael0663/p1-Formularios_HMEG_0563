@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para Contraseñas</title>
+</head>
+<body>
+    <!-- Encabezado principal del formulario -->
+    <h2>Formulario para contraseñas</h2>
+
+    <!-- action="": Define a qué página se envían los datos -->
+    <!-- method="post": Envía los datos del formulario de forma oculta para mayor seguridad -->
+    <form action="" method="post">
+        Ingresa tu usuario:
+        <!-- Campo de texto normal para ingresar el nombre de usuario -->
+        <input type="text" name="usuario">
+        <br>
+
+        Ingresa tu contraseña:
+        <!-- type="password": Oculta los caracteres con puntos o asteriscos al escribir -->
+        <input type="password" name="pass">
+        <br>
+
+        <!-- Botón para enviar la información al servidor -->
+        <input type="submit" value="enviar">
+
+        <!-- type="reset": Limpia o reinicia todos los campos del formulario -->
+        <input type="reset" value="borrar">
+    </form>
+</body>
+</html>

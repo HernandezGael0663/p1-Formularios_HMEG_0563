@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Selección</title>
+</head>
+<body>
+    <!-- Encabezado principal de la página -->
+    <h2>Formularios con selección</h2>
+
+    <!-- action="": Define a qué página se envían los datos -->
+    <!-- method="post": Envía los datos del formulario de forma oculta para mayor seguridad -->
+    <form action="" method="post">
+        Ingresa tu nombre:
+        <!-- Campo de texto normal para ingresar el nombre de usuario -->
+        <input type="text" name="nombre">
+        <br><br>
+
+        Selecciona tu país:
+        <!-- <select>: Crea un menú o lista.
+             - name="pais": Identifica del campo que recibirá el servidor. -->
+        <select name="pais">
+            <!-- <option>: Cada una de las alternativas que puedes seleccionar de la lista.
+                 - value="X": El valor que se enviará al servidor cuando el usuario elija esa opción. -->
+            <option value="1">Argentina</option>
+            <option value="2">España</option>
+            <option value="3">México</option>
+            <option value="4">Guatemala</option>
+            <option value="5">Honduras</option>
+            <option value="6">El Salvador</option>
+            <option value="7">Venezuela</option>
+            <option value="8">Colombia</option>
+        </select>
+        <br><br>
+
+        <!-- Botón para enviar la opción elegida al servidor -->
+        <input type="submit" value="enviar">
+
+        <!-- Botón para restablecer el formulario a su estado inicial -->
+        <input type="reset" value="borrar">
+    </form>
+</body>
+</html>

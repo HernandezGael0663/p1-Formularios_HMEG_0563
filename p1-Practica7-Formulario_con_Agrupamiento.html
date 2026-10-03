@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Agrupamiento</title>
+    <!-- Librería Font Awesome: Carga los íconos para los botones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Encabezado principal del formulario -->
+    <h2>Formularios con agrupamiento</h2>
+
+    <!-- enctype="multipart/form-data": Necesario para enviar archivos adjuntos (documentos e imágenes) -->
+     
+    <form action="" method="post" enctype="multipart/form-data">
+        <!-- type="hidden": Envía un valor interno (en este caso la hora) de forma oculta al servidor -->
+        <input type="hidden" name="hora" value="3:30">
+
+        <!-- <fieldset>: Crea una sección para agrupar campos relacionados de un mismo tema -->
+        <fieldset>
+            <!-- <legend>: Es el título visible que se coloca sobre el borde del <fieldset> -->
+            <legend>Datos personales</legend>
+            
+            Nombre y apellido:
+            <input type="text" name="nombre_apellido"><br><br>
+            
+            Documento válido:
+            <!-- type="file": Botón para subir un archivo desde el dispositivo -->
+            <input type="file" name="documento"><br><br>
+            
+            Fecha de nacimiento:
+            <!-- type="date": Campo con calendario para seleccionar una fecha -->
+            <input type="date" name="fecha_nacimiento">
+        </fieldset>
+
+        <br>
+
+        <!-- Segundo grupo para organizar los campos de otra temática diferente -->
+        <fieldset>
+            <legend>Datos de estudio</legend>
+            
+            Nombre de la escuela:
+            <input type="text" name="escuela"><br><br>
+            
+            Certificado válido:
+            <input type="file" name="certificado"><br><br>
+            
+            Fecha de egreso:
+            <input type="date" name="fecha_egreso">
+        </fieldset>
+
+        <br>
+        <!-- Botón para enviar todo el formulario -->
+        <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i></button>
+
+        <!-- Botón para limpiar todos los campos de ambos fieldsets -->
+        <button type="reset">Borrar <i class="fa-solid fa-trash"></i></button>
+    </form>
+</body>
+</html>
