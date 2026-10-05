@@ -4,18 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario con Archivos</title>
-    <!-- Librería Font Awesome: Carga los íconos para usarlos en el formulario -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Encabezado principal de la página -->
     <h2>Formulario con archivos</h2>
 
-    <!-- enctype="multipart/form-data": OBLIGATORIO cuando el formulario incluye envío de archivos. 
-         Permite dividir la información para que el navegador pueda empaquetar imágenes, PDFs o documentos junto con el texto. -->
     <!-- action="": Define a qué página se envían los datos -->
     <!-- method="post": Envía los datos del formulario de forma oculta para mayor seguridad -->
-    <form action="" method="post" enctype="multipart/form-data">
+    <form action="" method="post">
         Ingresa tu nombre:
         <!-- Campo de texto normal para ingresar el nombre de usuario -->
         <input type="text" name="nombre">
